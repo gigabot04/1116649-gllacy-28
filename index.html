@@ -13,16 +13,49 @@
         </a>
         <nav>
           <ul>
-            <li><a href="#">Каталог</a></li>
+            <li>
+              <a href="#">Каталог</a>
+              <div>
+                <ul>
+                  <li><a href="#">Новинки</a></li>
+                  <li><a href="catalog.html">Сливочное</a></li>
+                  <li><a href="#">Щербеты</a></li>
+                  <li><a href="#">Фруктовый лед</a></li>
+                  <li><a href="#">Мелорин</a></li>
+                </ul>
+              </div>
+            </li>
             <li><a href="#">Доставка и оплата</a></li>
             <li><a href="#">О компании</a></li>
           </ul>
         </nav>
         <nav>
           <ul>
-            <li><a href="#"><img src="#" alt="search">Поиск</a></li>
-            <li><a href="#"><img src="#" alt="exit">Выход</a></li>
-            <li><a href="#"><img src="#" alt="basket">Пусто</a></li>
+            <li>
+              <a href="#"><img src="#" alt="search">Поиск</a>
+              <div>
+                <input type="text" placeholder="Крем-брюле">
+              </div>
+            </li>
+            <li>
+              <a href="#"><img src="#" alt="exit">Вход</a>
+              <div>
+                <input type="email" name="email" id="email">
+                <input type="password" name="pass" id="pass">
+                <div>
+                  <div>
+                    <input type="submit" value="Войти">
+                  </div>
+                  <div>
+                    <a href="#">Забыли пароль?</a>
+                    <a href="#">Новая регистрация</a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <a href="#"><img src="#" alt="basket">Пусто</a>
+            </li>
           </ul>
         </nav>
       </div>
@@ -30,6 +63,53 @@
 
     <main>
       <div class="wrapper">
+        <section>
+          <img src="" alt="">
+          <img src="" alt="">
+          <h1>Пломбир с помадкой и клубничный щербет</h1>
+          <button type="submit">Давайте оба</button>
+          <div class="slider">
+            <label class="btn1">
+              <input type="radio" name="btn-slider">
+            </label>
+            <label class="btn2">
+              <input type="radio" name="btn-slider">
+            </label>
+            <label class="btn3">
+              <input type="radio" name="btn-slider">
+            </label>
+          </div>
+        </section>
+        <section class="sentences">
+          <article>
+            <div>
+              <img src="img/cream1.svg" alt="ice-cream">
+              <p>310 ₽<span>/кг</span></p>
+            </div>
+            <a>Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+          </article>
+          <article>
+            <div>
+              <img src="img/cream2.svg" alt="ice-cream">
+              <p>380 ₽<span>/кг</span></p>
+            </div>
+            <a>Сливочно-кофейное с кусочками шоколада</a>
+          </article>
+          <article>
+            <div>
+              <img src="img/cream3.svg" alt="ice-cream">
+              <p>355 ₽<span>/кг</span></p>
+            </div>
+            <a>Сливочно-клубничное с присыпкой из белого шоколада</a>
+          </article>
+          <article>
+            <div>
+              <img src="img/cream4.svg" alt="ice-cream">
+              <p>415 ₽<span>/кг</span></p>
+            </div>
+            <a>Сливочное крем-брюле с карамельной подливкой</a>
+          </article>
+        </section>
         <section class="edge">
           <h2>Магазин Глэйси – это онлайн и офлайн-магазин по продаже мороженого собственного проиводства на развес</h2>
           <div>
@@ -58,6 +138,17 @@
           <input type="email" name="email" id="email">
           <button type="submit">Отправить</button>
         </form>
+        <section>
+          <h2>Контакты</h2>
+          <div class="contact-map">
+            <!--тут будет карта-->
+          </div>
+          <div class="contact-adress">
+            <p>Адрес главного офиса<br>и офлайн-магазина:<br><strong>ул.Большая Конюшенная,<br>19/8, Санкт-Петербург</strong></p>
+            <p>Для заказов по телефону<br><b>8 812 450-25-25</b><br>(с 10 до 20 ежедневно)</p>
+            <input type="button" value="Форма обратной связи">
+          </div>
+        </section>
       </div>
     </main>
 
