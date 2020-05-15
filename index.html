@@ -41,8 +41,8 @@
               <a href="#">Вход</a>
               <div>
                 <form action="#">
-                  <input type="email" name="email" id="email">
-                  <input type="password" name="pass" id="pass">
+                  <input type="email" name="email" id="email-header">
+                  <input type="password" name="pass" id="pass-header">
                 </form>
                 <div>
                   <form action="#">
@@ -67,9 +67,10 @@
       <div class="wrapper">
         <section>
           <h1>Пломбир с помадкой и клубничный щербет</h1>
-          <button type="submit">Давайте оба</button>
+          <a href="#">Давайте оба</a>
           <div class="slider">
-            <form action="#">
+            <!--
+              <form action="#">
               <label class="btn1">
                 <input type="radio" name="btn-slider">
               </label>
@@ -80,6 +81,7 @@
                 <input type="radio" name="btn-slider">
               </label>
             </form>
+            -->
           </div>
         </section>
         <section class="sentences">
@@ -133,11 +135,11 @@
         </section>
         <article>
           <h3>Новое в нашем блоге</h3>
-          <a>10 способов сервировки фруктовых щербетов к столу</a>
+          <a href="#">10 способов сервировки фруктовых щербетов к столу</a>
         </article>
         <form action="#">
           <p>Подпишитесь на нашу сладкую рассылку и будьте всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-          <input type="email" name="email" id="email">
+          <input type="email" name="email" id="email-main">
           <button type="submit">Отправить</button>
         </form>
         <section>
@@ -145,11 +147,11 @@
           <div class="contact-map">
             <!--тут будет карта-->
           </div>
-          <form action="#" class="contact-adress">
+          <div class="contact-adress">
             <p>Адрес главного офиса<br>и офлайн-магазина:<br><strong>ул.Большая Конюшенная,<br>19/8, Санкт-Петербург</strong></p>
             <p>Для заказов по телефону<br><b>8 812 450-25-25</b><br>(с 10 до 20 ежедневно)</p>
-            <input type="button" value="Форма обратной связи">
-          </form>
+            <a href="#">Форма обратной связи</a>
+          </div>
         </section>
       </div>
     </main>
@@ -168,15 +170,15 @@
         </section>
         <section>
           <ul>
-            <li><a>Для поставщиков</a></li>
-            <li><a>Наши документы</a></li>
-            <li><a>О производстве</a></li>
-            <li><a>Экологические стандарты</a></li>
+            <li><a href="#">Для поставщиков</a></li>
+            <li><a href="#">Наши документы</a></li>
+            <li><a href="#">О производстве</a></li>
+            <li><a href="#">Экологические стандарты</a></li>
           </ul>
         </section>
         <div>
           <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-footer.svg" alt="logo"></a>
-          <p>Сделано в HTML Academy © 2019</p>
+          <p>Сделано в <a>HTML Academy</a> © 2019</p>
         </div>
       </div>
     </footer>
