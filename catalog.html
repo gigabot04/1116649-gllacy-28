@@ -15,16 +15,14 @@
         <nav>
           <ul>
             <li>
-              <a href="#" class="active">Каталог</a>
-              <div>
-                <ul>
-                  <li><a href="#">Новинки</a></li>
-                  <li><a href="catalog.html">Сливочное</a></li>
-                  <li><a href="#">Щербеты</a></li>
-                  <li><a href="#">Фруктовый лед</a></li>
-                  <li><a href="#">Мелорин</a></li>
-                </ul>
-              </div>
+              <a href="#">Каталог</a>
+              <ul>
+                <li><a href="#">Новинки</a></li>
+                <li><a href="catalog.html">Сливочное</a></li>
+                <li><a href="#">Щербеты</a></li>
+                <li><a href="#">Фруктовый лед</a></li>
+                <li><a href="#">Мелорин</a></li>
+              </ul>
             </li>
             <li><a href="#">Доставка и оплата</a></li>
             <li><a href="#">О компании</a></li>
@@ -34,26 +32,30 @@
           <ul>
             <li>
               <a href="#">Поиск</a>
-              <form action="#">
-                <input type="text" placeholder="Крем-брюле">
-              </form>
+              <div>
+                <form action="https://echo.htmlacademy.ru" method="GET">
+                  <label aria-label="Поиск по сайту">
+                    <input type="text" name="header_site-search" placeholder="Крем-брюле">
+                  </label>
+                </form>
+              </div>
             </li>
             <li>
-              <a href="#">Вход</a>
+              <a href="#">Войти</a>
               <div>
-                <form action="#">
-                  <input type="email" name="email" id="email">
-                  <input type="password" name="pass" id="pass">
+                <form action="https://echo.htmlacademy.ru" method="POST">
+                  <label aria-label="Введите электронную почту">
+                    <input type="email" name="header_email" placeholder="Электронная почта" required>
+                  </label>
+                  <label aria-label="Введите пароль">
+                    <input type="password" name="header_password" placeholder="Пароль" required>
+                  </label>
+                  <button type="submit">Войти</button>
                 </form>
-                <div>
-                  <form action="#">
-                    <input type="submit" value="Войти">
-                  </form>
-                  <div>
-                    <a href="#">Забыли пароль?</a>
-                    <a href="#">Новая регистрация</a>
-                  </div>
-                </div>
+              </div>
+              <div>
+                <a href="#">Забыли пароль?</a>
+                <a href="#">Новая регистрация</a>
               </div>
             </li>
             <li>
@@ -74,11 +76,11 @@
                     <td>1,5 кг х <span>300 руб.</span></td>
                     <td>450р.</td>
                   </tr>
+                  <tr>
+                    <td colspan="5">Итого: 750руб.</td>
+                  </tr>
                 </table>
-                <div>
-                  <p><b>Итого: 750руб.</b></p>
-                  <a href="#">Оформить заказ</a>
-                </div>
+                <a href="#">Оформить заказ</a>
               </div>
             </li>
           </ul>
@@ -300,9 +302,22 @@
         </section>
         <div>
           <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-foot.svg" alt="logo"></a>
-          <p>Сделано в HTML Academy © 2019</p>
+          <p>Сделано в <a href="https://htmlacademy.ru">HTML Academy</a> © 2019</p>
         </div>
       </div>
     </footer>
+    <form action="https://echo.htmlacademy.ru" method="GET">
+      <fieldset>
+        <legend>Мы обязательно вам ответим!</legend>
+        <label aria-label="Введите свое Имя Фамилию">
+          <input type="text" name="popap_full-name" placeholder="Имя Фамилия">
+        </label>
+        <label aria-label="Введите свой электронную почту" aria-placeholder="email@example.com">
+          <input type="email" name="popap_email">
+        </label>
+        <textarea name="popap_textarea" placeholder="В свободной форме"></textarea>
+        <button type="submit">Отправить</button>
+      </fieldset>
+    </form>
   </body>
 </html>
