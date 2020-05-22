@@ -33,8 +33,8 @@
               <a href="#">Поиск</a>
               <div>
                 <form action="https://echo.htmlacademy.ru" method="GET">
-                  <label aria-label="Поиск по сайту">
-                    <input type="text" name="header_site-search" placeholder="Крем-брюле">
+                  <label>
+                    <input type="text" name="header_site-search" aria-label="Поиск по сайту" placeholder="Крем-брюле">
                   </label>
                 </form>
               </div>
@@ -43,11 +43,11 @@
               <a href="#">Войти</a>
               <div>
                 <form action="https://echo.htmlacademy.ru" method="POST">
-                  <label aria-label="Введите электронную почту">
-                    <input type="email" name="header_email" placeholder="Электронная почта" required>
+                  <label>
+                    <input type="email" name="header_email" aria-label="Введите электронную почту" placeholder="Электронная почта" required>
                   </label>
-                  <label aria-label="Введите пароль">
-                    <input type="password" name="header_password" placeholder="Пароль" required>
+                  <label>
+                    <input type="password" name="header_password" aria-label="Введите пароль" placeholder="Пароль" required>
                   </label>
                   <button type="submit">Войти</button>
                 </form>
@@ -69,15 +69,15 @@
       <div class="wrapper">
         <section>
           <div>
-            <img src="img/ice-cream1.png" width="644px" height="582px" alt="Пломбир с помадкой и клубничный щербет">
+            <img src="img/ice-cream1.png" width="644" height="582" alt="Пломбир с помадкой и клубничный щербет">
             <h1>Пломбир с помадкой и клубничный щербет</h1>
           </div>
           <div>
-            <img src="img/ice-cream2.png" width="644px" height="582px" alt="Шоколадный пломбир и лимонный сорбет">
+            <img src="img/ice-cream2.png" width="644" height="582" alt="Шоколадный пломбир и лимонный сорбет">
             <h1>Шоколадный пломбир и лимонный сорбет</h1>
           </div>
           <div>
-            <img src="img/ice-cream3.png" width="644px" height="582px" alt="Крем-брюле и пломбир с малиновым джемом">
+            <img src="img/ice-cream3.png" width="644" height="582" alt="Крем-брюле и пломбир с малиновым джемом">
             <h1>Крем-брюле и пломбир с малиновым джемом</h1>
           </div>
           <a href="#">Давайте оба</a>
@@ -141,9 +141,11 @@
           <h3>Новое в нашем блоге</h3>
           <a href="#">10 способов сервировки фруктовых щербетов к столу</a>
         </article>
-        <form action="#">
+        <form action="https://echo.htmlacademy.ru" method="GET">
           <p>Подпишитесь на нашу сладкую рассылку и будьте всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-          <input type="email" name="email" id="email-main">
+          <label>
+            <input type="email" name="email" aria-label="Введите свой электронную почту">
+          </label>
           <button type="submit">Отправить</button>
         </form>
         <section>
@@ -183,18 +185,18 @@
         </section>
         <div>
           <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-foot.svg" alt="logo"></a>
-          <p>Сделано в <a href="https://htmlacademy.ru">HTML Academy</a> © 2019</p>
+          <p>Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2019</p>
         </div>
       </div>
     </footer>
     <form action="https://echo.htmlacademy.ru" method="GET">
       <fieldset>
         <legend>Мы обязательно вам ответим!</legend>
-        <label aria-label="Введите свое Имя Фамилию">
-          <input type="text" name="popap_full-name" placeholder="Имя Фамилия">
+        <label>
+          <input type="text" name="popap_full-name" aria-label="Введите свое Имя Фамилию" placeholder="Имя Фамилия">
         </label>
-        <label aria-label="Введите свой электронную почту" aria-placeholder="email@example.com">
-          <input type="email" name="popap_email">
+        <label>
+          <input type="email" name="popap_email" aria-label="Введите свой электронную почту" placeholder="email@example.com">
         </label>
         <textarea name="popap_textarea" placeholder="В свободной форме"></textarea>
         <button type="submit">Отправить</button>
