@@ -1,5 +1,5 @@
 :root {
-  --bg-color: #849D8F;
+  --bg-color: #9D8B84;
   --basic-white: #F8F7F4;
   --dark-white: #FEFEFE;
   --normal-white: #FFFFFF;
@@ -62,6 +62,12 @@ img {
   padding-top: 9px;
   width: calc(1200px - 56px);
   margin: 0 auto;
+}
+
+.bg-image {
+  background-image: url(../img/ice-cream1.png);
+  background-repeat: no-repeat;
+  background-position: top center;
 }
 
 /*Navigation*/
@@ -213,11 +219,22 @@ img {
 .time {
   min-height: 45px;
   grid-column-end: -1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.time p {
+  font-size: 14px;
+  line-height: 16px;
+  margin: 0;
 
 }
 
 .time a {
   color: var(--normal-white);
+  font-size: 22px;
+  line-height: 24px;
 }
 
 .finding {
@@ -233,20 +250,25 @@ img {
   color: var(--normal-white);
 }
 
+.find a[href]:hover {
+  color: var(--hover-a);
+  border-bottom: 1px solid rgba(255, 188, 158, 0.3);
+}
+
 .find {
   display: flex;
   list-style: none;
   margin: 0;
-  margin-top: 28px;
-  margin-bottom: 9px;
   padding: 0;
+  margin-top: -28px;
+  margin-left: -9px;
 }
 
 .find li::before {
   content: "»";
   margin-left: 8px;
   margin-right: 8px;
-  color: #ffffff;
+  color: var(--normal-white);
 }
 
 .find li:first-child::before {
@@ -261,6 +283,7 @@ img {
 
 .slider {
   position: relative;
+  padding-top: 210px;
 }
 
 .slide {
@@ -292,7 +315,7 @@ img {
 }
 
 .slider-btn button:hover {
-  background: rgba(255, 255, 255, 0.4);
+  background-color: rgba(255, 255, 255, 0.4);
 }
 
 .btn-slider1 {
@@ -301,7 +324,7 @@ img {
   height: 18px;
   margin-right: 8px;
   vertical-align: top;
-  
+  background-color: transparent;
   border: 2px solid #ffffff;
   border-radius: 50%;
   cursor: pointer;
@@ -325,7 +348,7 @@ img {
   height: 18px;
   margin-right: 8px;
   vertical-align: top;
-  background-color: transparent;
+  background-color: ar(--normal-white);;
   border: 2px solid #ffffff;
   border-radius: 50%;
   cursor: pointer;
@@ -341,6 +364,7 @@ img {
   box-shadow: 0px 2px 2px rgba(85, 8, 0, 0.54);
   border-radius: 70px;
   color: var(--normal-white);
+  text-shadow: 0px 2px 5px rgba(160, 32, 11, 0.76);
 }
 
 .btn:hover {
@@ -482,7 +506,7 @@ img {
 
 .product-name:hover {
   color: var(--hover-a);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(255, 188, 158, 0.3);
 }
 
 .hit-product-hover .btn {
@@ -636,7 +660,7 @@ img {
 
 .blog a:hover {
   color: var(--hover-modal);
-  border-bottom: 2px solid var(--hover-modal);
+  border-bottom: 2px solid rgba(255, 188, 158, 0.3);
 }
 
 /*mailing*/
@@ -844,10 +868,11 @@ img {
 
 .html-academy a:last-child {
   color: var(--normal-white);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 .html-academy a:last-child:hover {
   color: var(--hover-a);
+  border-bottom: 1px solid rgba(255, 188, 158, 0.3);
 }
 /* ------------ */
 /* CATALOG.HTML */
