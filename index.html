@@ -10,14 +10,14 @@
   <body>
     <header>
       <div class="wrapper">
-        <div class="container clearfix">
+        <div class="container">
           <a>
             <img src="img/logo.svg" alt="logo" width="154" height="64">
           </a>
           <nav>
             <ul class="header-navigation">
-              <li class="nav-item">
-                <a href="#">Каталог</a>
+              <li class="nav-items">
+                <a href="#" class="nav-item">Каталог</a>
                 <ul class="catalog-list">
                   <li><a href="#">Новинки</a></li>
                   <li><a href="catalog.html">Сливочное</a></li>
@@ -26,8 +26,12 @@
                   <li><a href="#">Мелорин</a></li>
                 </ul>
               </li>
-              <li class="nav-item"><a href="#">Доставка и оплата</a></li>
-              <li class="nav-item"><a href="#">О компании</a></li>
+              <li class="nav-items">
+                <a href="#" class="nav-item">Доставка и оплата</a>
+              </li>
+              <li class="nav-items">
+                <a href="#" class="nav-item">О компании</a>
+              </li>
             </ul>
           </nav>
           <nav>
@@ -61,13 +65,13 @@
                 </div>
               </li>
               <li class="header-pay">
-                <a href="#">Пусто</a>
+                <a href="#" class="box">Пусто</a>
               </li>
             </ul>
           </nav>
           <div class="time">
             <p>с 10 до 20, ежедневно</p>
-            <a>8 812 450-25-25</a>
+            <a href="tel 88124502525">8 812 450-25-25</a>
           </div>
         </div>
       </div>
@@ -142,31 +146,33 @@
             </article>
           </div>
         </section>
-        <section class="advantages clearfix">
-          <h2>Магазин Глэйси – это онлайн и офлайн-магазин по продаже мороженого собственного<br>проиводства на развес</h2>
+        <section class="advantages">
+          <h2>Магазин Глэйси – это онлайн и офлайн-магазин по продаже мороженого собственного проиводства на развес</h2>
           <div class="advantages-flex">
-            <div class="advantage1">
+            <div class="advantage advantage1">
               <p>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
             </div>
-            <div class="advantage2">
+            <div class="advantage advantage2">
               <p>Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
             </div>
-            <div class="advantage3">
+            <div class="advantage advantage3">
               <p>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
             </div>
-            <div class="advantage4">
+            <div class="advantage advantage4">
               <p>Доставка нашего мороженного до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
             </div>
           </div>
         </section>
         <section class="news">
           <article class="blog">
-            <h3>Новое в нашем блоге</h3>
-            <a href="#">10 способов сервировки<br>фруктовых щербетов<br>к столу</a>
+            <div class="blog-content">
+              <h3>Новое в нашем блоге</h3>
+              <a href="#">10 способов сервировки фруктовых щербетов к столу</a>
+            </div>
           </article>
           <div class="mailing">
             <form action="https://echo.htmlacademy.ru" method="GET">
-              <p>Подпишитесь на нашу сладкую рассылку и будьте всегда в курсе<br>всего самого вкусного, что у нас происходит. Обещаем не спамить<br>и не слать всякой ненужной ерунды. Честно =)</p>
+              <p>Подпишитесь на нашу сладкую рассылку и будьте всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
               <label>
                 <input type="email" name="email" aria-label="Введите свой электронную почту" placeholder="email@example.com" required>
               </label>
@@ -174,31 +180,31 @@
             </form>
           </div>
         </section>
-        <section class="contacts">
-          <h2 class="visually-hidden">Контакты</h2>
-          <div class="contact-map">
-            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A87b4575840cdf909043ac2d3f40b98e0a530aadc532932ff86e1c0323d2ba140&amp;width=100%25&amp;height=430&amp;lang=ru_RU&amp;scroll=true"></script>
-          </div>
+      </div>
+      <section class="contacts">
+        <h2 class="visually-hidden">Контакты</h2>
+        <div class="contact-map">
+          <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A87b4575840cdf909043ac2d3f40b98e0a530aadc532932ff86e1c0323d2ba140&amp;width=100%25&amp;height=430&amp;lang=ru_RU&amp;scroll=true"></script>
+        </div>
+        <div class="wrapper">
           <div class="contact-adress">
-            <p>Адрес главного офиса<br>и офлайн-магазина:<br><strong>ул.Большая Конюшенная, 19/8, Санкт-Петербург</strong></p>
-            <p>Для заказов по телефону:<br><b>8 812 450-25-25</b><br>(с 10 до 20 ежедневно)</p>
+            <p>Адрес главного офиса и офлайн-магазина: <strong>ул.Большая Конюшенная, 19/8, Санкт-Петербург</strong></p>
+            <p>Для заказов по телефону: <b>8 812 450-25-25</b> (с 10 до 20 ежедневно)</p>
             <a href="#" class="btn btn-large">Форма обратной связи</a>
           </div>
-        </section>
-      </div>
+        </div>
+      </section>
     </main>
     <footer class="footer">
       <div class="wrapper">
         <section>
           <h4 class="visually-hidden">Соц. сети</h4>
-          <nav class="social">
-            <ul>
-              <li class="social-fb"><a href="#"></a></li>
-              <li class="social-vk"><a href="#"></a></li>
-              <li class="social-inst"><a href="#"></a></li>
-              <li class="social-twit"><a href="#"></a></li>
-            </ul>
-          </nav>
+          <div class="social">
+              <a href="#" class="social-fb social-hover"></a>
+              <a href="#" class="social-vk social-hover"></a>
+              <a href="#" class="social-inst social-hover"></a>
+              <a href="#" class="social-twit social-hover"></a>
+          </div>
         </section>
         <section class="footer-navigation">
           <h4 class="visually-hidden">Важно знать</h4>
