@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
-  <body>
+  <body class="bg-color">
     <header>
       <div class="wrapper">
         <div class="container">
@@ -17,7 +17,7 @@
           <nav>
             <ul class="header-navigation">
               <li class="nav-items">
-                <a href="#" class="nav-item active" >Каталог</a>
+                <a href="#" class="nav-item active">Каталог</a>
                 <ul class="catalog-list">
                   <li><a href="#">Новинки</a></li>
                   <li><a href="catalog.html">Сливочное</a></li>
@@ -70,15 +70,15 @@
                   <table>
                     <tr>
                       <td><button>X</button></td>
-                      <img src="img/cream1.jpg" alt="мороженое" width="33" height="33">
+                      <td><img src="img/cream1.jpg" alt="мороженое" width="33" height="33"></td>
                       <td>Пломбир с апельсиновым джемом</td>
                       <td>1,5 кг х <span>200 руб.</span></td>
                       <td>300р.</td>
                     </tr>
                     <tr>
                       <td><button>X</button></td>
-                      <img src="img/cream3.jpg" alt="мороженое" width="33" height="33">
-                      <td> Клубничный пломбир с присыпкой из белого шоколада</td>
+                      <td><img src="img/cream3.jpg" alt="мороженое" width="33" height="33"></td>
+                      <td>Клубничный пломбир с присыпкой из белого шоколада</td>
                       <td>1,5 кг х <span>300 руб.</span></td>
                       <td>450р.</td>
                     </tr>
@@ -93,7 +93,7 @@
           </nav>
           <div class="time">
             <p>с 10 до 20, ежедневно</p>
-            <a href="tel 88124502525">8 812 450-25-25</a>
+            <a href="tel:88124502525">8 812 450-25-25</a>
           </div>
         </div>
       </div>
@@ -103,29 +103,41 @@
         <section class="finding">
           <h2 class="visually-hidden">Путь к странице</h2>
           <ul class="find">
-            <li><a href="index.html"> Главная </a></li>
-            <li><a href="#"> Каталог </a></li>
-            <li><a> Сливочное </a></li>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="#">Каталог</a></li>
+            <li><a>Сливочное</a></li>
           </ul>
         </section>
         <h1 class="main-title">Сливочное мороженое</h1>
-        <section>
-          <h2>Сортировка</h2>
-          <form action="#">
-            <fieldset>
+        <section class="sorting">
+          <h2 class="visually-hidden">Сортировка</h2>
+          <form action="https://echo.htmlacademy.ru" method="POST">
+            <fieldset class="filter">
               <legend>Сортировка:</legend>
-              <select>
+              <select class="sort1">
                 <option>по популярности</option>
                 <option>сначала недорогие</option>
                 <option>сначала дорогие</option>
                 <option>по жирности</option>
               </select>
             </fieldset>
-            <!--Тут должна быть форма с диапазоном цены-->
-
-            <fieldset>
+            <fieldset class="filter">
+              <legend>Цена: 100 ₽ – 500 ₽</legend>
+              <div class="range">
+                <div class="lane">
+                  <div class="lane2"></div>
+                </div>
+                <div class="circle1">
+                  <div class="lilcircle"></div>
+                </div>
+                <div class="circle2">
+                  <div class="lilcircle"></div>
+                </div>
+              </div>
+            </fieldset>
+            <fieldset class="filter">
               <legend>Жирность:</legend>
-              <ul>
+              <ul class="richness">
                 <li>
                   <label>
                     <input type="radio" name="fat" value="0">
@@ -152,9 +164,9 @@
                 </li>
               </ul>
             </fieldset>
-            <fieldset>
+            <fieldset class="filter">
               <legend>Наполнители:</legend>
-              <ul>
+              <ul class="fillers">
                 <li>
                   <label>
                     <input type="checkbox" name="filler-chocolate" checked>
@@ -187,7 +199,7 @@
                 </li>
               </ul>
             </fieldset>
-            <button type="submit">Применить</button>
+            <button type="submit" class="filter-submit">Применить</button>
           </form>
         </section>
         <section>
@@ -270,7 +282,7 @@
             </article>
             <article class="product-hover">
               <div class="product">
-                <img src="img/cream10.jpg" alt="ice-cream" width="267" height="267px">
+                <img src="img/cream10.jpg" alt="ice-cream" width="267" height="267">
                 <p>435 ₽<span>/кг</span></p>
               </div>
               <h4><a href="#" class="product-name">Сливочноe с ментоловым сиропом</a></h4>
