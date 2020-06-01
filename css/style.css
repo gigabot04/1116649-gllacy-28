@@ -68,6 +68,12 @@ img {
   margin: 0 auto;
 }
 
+.wrapper2 {
+  padding-top: 9px;
+  width: 1146px;
+  margin: 0 auto;
+}
+
 .bg-image {
   background-image: url(../img/ice-cream1.png);
   background-repeat: no-repeat;
@@ -958,6 +964,10 @@ img {
   color: var(--blog);
 }
 
+.filter input {
+  margin-right: 11px;
+}
+
 .sort1 {
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 20px;
@@ -1061,14 +1071,7 @@ img {
 
 .products {
   display: flex;
-  justify-content: center;
-}
-
-.line1:hover,
-.line2:hover,
-.line3:hover {
-  position: relative;
-  z-index: 3;
+  flex-wrap: wrap;
 }
 
 .product {
@@ -1131,11 +1134,14 @@ img {
 .product-hover {
   position: relative;
   z-index: 2;
-  right: -13px;
   vertical-align: top;
   text-align: center;
   margin-bottom: 20px;
   margin-right: 26px;
+}
+
+.product-hover:nth-child(4n) {
+  margin-right: 0;
 }
 
 .product-hover::before {
