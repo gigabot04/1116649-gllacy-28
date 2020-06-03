@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="bg-color">
+  <div class="liner"></div>
     <header>
       <div class="wrapper">
         <div class="container">
@@ -142,18 +143,27 @@
               </div>
             </fieldset>
             <fieldset class="filter filter-range">
-              <legend>Цена: 100 ₽ – 500 ₽</legend>
+              <legend>Цена:</legend>
+              <div class="price-controls">
+                <label class="min-price">
+                  <input type="number" name="min-price" value="100">₽
+                </label>
+                <label class="max-price">
+                  <input type="number" name="max-price" value="500">₽
+                </label>
+              </div>
               <div class="range">
                 <div class="lane">
-                  <div class="lane2"></div>
+                  <div class="lane2" style="width: 55%; margin-left: 13%;"></div>
+                  <div class="circle1" style="left: 13%;">
+                    <div class="lilcircle"></div>
+                  </div>
+                  <div class="circle2" style="left: 68%;">
+                    <div class="lilcircle"></div>
+                  </div>
                 </div>
-                <div class="circle1">
-                  <div class="lilcircle"></div>
                 </div>
-                <div class="circle2">
-                  <div class="lilcircle"></div>
-                </div>
-              </div>
+                
             </fieldset>
             <fieldset class="filter filter-fat">
               <legend>Жирность:</legend>
@@ -164,7 +174,7 @@
                 </li>
                 <li>
                   <input type="radio" name="fat" value="10" id="10" class="visually-hidden" checked>
-                  <label for="10" class="fat-checkbox" ><span>до 10%</span></label>
+                  <label for="10" class="fat-checkbox"><span>до 10%</span></label>
                 </li>
                 <li>
                   <input type="radio" name="fat" value="min30" id="min30" class="visually-hidden">
