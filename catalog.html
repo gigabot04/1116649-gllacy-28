@@ -133,13 +133,16 @@
           <form action="https://echo.htmlacademy.ru" method="POST">
             <fieldset class="filter filter-sort1">
               <legend>Сортировка:</legend>
-              <div class="sort2">
+              <div class="sorts">
                 <select class="sort1">
                   <option>по популярности</option>
                   <option>сначала недорогие</option>
                   <option>сначала дорогие</option>
                   <option>по жирности</option>
                 </select>
+                <svg class="sort-svg" width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path class="sort-svg-path" d="M5.5 10L0 0H11" fill="#ECF1EE"/>
+                </svg>
               </div>
             </fieldset>
             <fieldset class="filter filter-range">
@@ -194,8 +197,8 @@
                   <label class="filter-checkbox" for="filler-chocolate"><span>шоколадные</span></label>
                 </li>
                 <li>
-                    <input type="checkbox" name="filler-sugar" class="visually-hidden" id="filler-sugar" checked>
-                    <label class="filter-checkbox" for="filler-sugar"><span>сахарные присыпки</span></label>
+                  <input type="checkbox" name="filler-sugar" class="visually-hidden" id="filler-sugar" checked>
+                  <label class="filter-checkbox" for="filler-sugar"><span>сахарные присыпки</span></label>
                 </li>
                 <li>
                   <input type="checkbox" name="filler-fruit" class="visually-hidden" id="filler-fruit">
