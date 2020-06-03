@@ -167,7 +167,7 @@ img {
   font-size: 14px;
   line-height: 16px;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   padding: 0;
 }
 
@@ -246,7 +246,7 @@ img {
   height: 32px;
   background: rgba(255, 255, 255, 0.2);
   border-radius: 20px;
-  padding: 6px 15px 7px 15px;
+  padding: 6px 14px 7px 15px;
   margin-right: -2px;
   color: var(--normal-white);
 }
@@ -265,8 +265,16 @@ img {
   fill: var(--blog);
 }
 
+.header-in-out {
+  margin-left: 10px;
+}
+
 .header-in-out div {
   display: none;
+}
+
+.header-pay {
+  margin-left: 9px;
 }
 
 .header-pay div {
@@ -340,20 +348,41 @@ img {
 
 /*Slider*/
 
+.bg-image{
+  background-repeat: no-repeat;
+  background-position: top center;
+  transition: background-image 0.5s ease, background-color 0.5s ease;
+}
+
+.bg-image1 {
+  background-image: url(../img/ice-cream3.png);
+  background-color: #849D8F;
+}
+
+.bg-image2 {
+  background-image: url(../img/ice-cream2.png);
+  background-color: #8996A6;
+}
+
+.bg-image3 {
+  background-image: url(../img/ice-cream1.png);
+  background-color: #9D8B84;
+}
+
 .slider {
   position: relative;
-  padding-top: 210px;
+  padding-top: 265px;
 }
 
 .slide {
   text-align: center;
-  width: 648px;
+  width: 670px;
   margin: 0 auto;
+  display: none;
 }
 
-.slide2,
-.slide3 {
-  display: none;
+.slide-corrent {
+  display: block;
 }
 
 .slider a {
@@ -365,23 +394,28 @@ img {
   font-size: 60px;
   line-height: 70px;
   text-align: center;
+  margin: 0;
+  margin-bottom: 6px;
 }
 
 .slider-btn {
   position: absolute;
-  bottom: 27px;
-  left: 0;
+  bottom: 24px;
+  left: -1px;
+  width: 79px;
+  display: flex;
+  justify-content: space-between;
 }
 
-.slider-btn button:hover {
+.slider-btn button:not(.current-btn):hover {
   background-color: rgba(255, 255, 255, 0.4);
 }
 
-.btn-slider1 {
+.btn-slider {
   display: inline-block;
-  width: 18px;
-  height: 18px;
-  margin-right: 8px;
+  width: 21px;
+  height: 21px;
+
   vertical-align: top;
   background-color: transparent;
   border: 2px solid #ffffff;
@@ -389,28 +423,13 @@ img {
   cursor: pointer;
 }
 
-.btn-slider2 {
-  display: inline-block;
-  width: 18px;
-  height: 18px;
-  margin-right: 8px;
-  vertical-align: top;
-  background-color: transparent;
-  border: 2px solid #ffffff;
-  border-radius: 50%;
-  cursor: pointer;
+.btn-slider:last-child {
+  margin-right: 0px;
 }
 
-.btn-slider3 {
-  display: inline-block;
-  width: 18px;
-  height: 18px;
-  margin-right: 8px;
-  vertical-align: top;
-  background-color: ar(--normal-white);;
-  border: 2px solid #ffffff;
-  border-radius: 50%;
-  cursor: pointer;
+.current-btn {
+  background-color: #ffffff;
+  cursor: default;
 }
 
 /*buttons*/
@@ -453,20 +472,15 @@ img {
 /*STOKS*/
 
 .stocks {
-  margin-top: 40px;
-  display: flex;
-  justify-content: space-between;
+  margin-top: 39px;
+  margin-left: -1px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 26px;
 }
 
 .slider .btn-large {
   padding: 10px 40px;
-}
-
-.stocks a {
-  padding: 15px 22px;
-  position: absolute;
-  bottom: 22px;
-  right: 22px;
 }
 
 .stocks h3 {
@@ -498,7 +512,13 @@ img {
 }
 
 .stocks a {
-  margin-top: 42px;
+  padding: 12px 22px;
+  position: absolute;
+  bottom: 22px;
+  right: 22px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
 }
 
 .stock2 {
@@ -536,9 +556,9 @@ img {
 .hit-product p {
   position: absolute;
   bottom: 0;
-  left: 0;
+  left: 1px;
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 13px;
   font-size: 45px;
   line-height: 45px;
   text-shadow: 0px 1px 3px rgba(49, 50, 53, 0.5);
@@ -547,6 +567,17 @@ img {
 .hit-product span {
   font-size: 30px;
   line-height: 35px;
+}
+
+.hit-product-hover {
+  position: relative;
+  z-index: 2;
+  right: -13px;
+  vertical-align: top;
+  text-align: center;
+  margin-bottom: 27px;
+  margin-right: 26px;
+  margin-top: 40px;
 }
 
 .hit-product-hover h4{
@@ -586,17 +617,6 @@ img {
   display: block;
 }
 
-.hit-product-hover {
-  position: relative;
-  z-index: 2;
-  right: -13px;
-  vertical-align: top;
-  text-align: center;
-  margin-bottom: 20px;
-  margin-right: 26px;
-  margin-top: 40px;
-}
-
 .hit-product-hover::before {
   content: "";
   position: absolute;
@@ -626,7 +646,7 @@ img {
   min-height: 306px;
   border-radius: 16px;
   color: var(--pattern);
-  padding: 23px 20px;
+  padding: 23px 17px;
 }
 
 .advantages h2 {
@@ -634,6 +654,8 @@ img {
   font-size: 24px;
   line-height: 30px;
   margin: 0;
+  margin-top: 1px;
+  margin-left: 2px;
 }
 
 .advantages-flex p {
@@ -641,8 +663,9 @@ img {
   font-size: 16px;
   line-height: 22px;
   margin: 0;
-  margin-top: 21px;
-  width: calc(540px - 53px);
+  margin-top: 16px;
+  margin-bottom: 6px;
+  width: calc(540px - 58px);
 }
 
 .advantage {
@@ -652,11 +675,12 @@ img {
 .advantage1::before {
   margin-right: 6px;
   margin-top: 7px;
+  margin-left: 2px;
   content: url(../img/ice-cream-icon.svg);
 }
 
 .advantage2::before {
-  margin-right: 6px;
+  margin-right: 11px;
   margin-top: 7px;
   content: url(../img/cow-icon.svg);
 }
@@ -664,11 +688,12 @@ img {
 .advantage3::before {
   margin-right: 6px;
   margin-top: 7px;
+  margin-left: 2px;
   content: url(../img/leaf-icon.svg);
 }
 
 .advantage4::before {
-  margin-right: 6px;
+  margin-right: 11px;
   margin-top: 7px;
   content: url(../img/temp-icon.svg);
 }
@@ -696,13 +721,16 @@ img {
   width: 560px;
   height: 220px;
   color: var(--blog);
-  padding-top: 23px;
+  padding-top: 18px;
   padding-left: 20px;
 }
 
 .blog h3 {
   margin: 0;
-  margin-bottom: 15px;;
+  margin-bottom: 3px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
 }
 
 .blog a {
@@ -729,7 +757,7 @@ img {
   border-radius: 16px;
   background-repeat: no-repeat;
   color: var(--mailling);
-  padding: 34px 22px 41px 26px;
+  padding: 30px 21px 41px 27px;
   font-weight: normal;
   font-size: 16px;
   line-height: 22px;
@@ -739,16 +767,19 @@ img {
 
 .mailing p {
   margin: 0;
-  margin-bottom: 47px;
+  margin-bottom: 40px;
 }
 
 .mailing .btn {
-  padding: 14px 19px 13px 19px;
+  padding-top: 9px;
+  padding-bottom: 9px;
   border: none;
   color: var(--normal-white);
-  margin-left: 10px;
-  margin-right: 0;
+  margin-left: 7px;
   width: 130px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
 }
 
 .mailing input {
@@ -800,13 +831,23 @@ img {
   height: 306px;
   border-radius: 16px;
   position: absolute;
-  padding: 32px 25px;
+  padding: 32px 27px;
   right: 0;
   top: 62px;
 }
 
 .contact-adress p {
   margin: 0;
+}
+
+.contact-adress p:first-child {
+  margin-top: -1px;
+  margin-bottom: -2px;
+  padding-right: 100px;
+}
+
+.contact-adress p:nth-child(3) {
+  margin-top: 22px;
 }
 
 .contact-adress strong,
@@ -816,17 +857,13 @@ img {
   line-height: 24px;
 }
 
-.contact-adress p {
-  margin-bottom: 30px;
-}
-
-
 .contact-adress a {
-  padding: 13px 28px;
+  padding: 10px 28px;
   width: 253px;
   font-weight: bold;
   font-size: 18px;
   line-height: 24px;
+  margin-top: 29px;
 }
 
 /* footer */
