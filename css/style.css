@@ -83,12 +83,6 @@ img {
   margin: 0 auto;
 }
 
-.bg-image {
-  background-image: url(../img/ice-cream1.png);
-  background-repeat: no-repeat;
-  background-position: top center;
-}
-
 /*Navigation*/
 
 .container {
@@ -354,17 +348,17 @@ img {
   transition: background-image 0.5s ease, background-color 0.5s ease;
 }
 
-.bg-image1 {
+.image1 {
   background-image: url(../img/ice-cream3.png);
   background-color: #849D8F;
 }
 
-.bg-image2 {
+.image2 {
   background-image: url(../img/ice-cream2.png);
   background-color: #8996A6;
 }
 
-.bg-image3 {
+.image3 {
   background-image: url(../img/ice-cream1.png);
   background-color: #9D8B84;
 }
@@ -381,7 +375,7 @@ img {
   display: none;
 }
 
-.slide-corrent {
+.slide-current {
   display: block;
 }
 
