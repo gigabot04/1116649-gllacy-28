@@ -169,10 +169,9 @@ img {
   font-weight: bold;
   font-size: 14px;
   line-height: 18px;
-
 }
 
-.header-menu > li:first-child > a::after {
+.header-menu > li:first-child::after {
   content: "";
   position: absolute;
   left: 6px;
@@ -199,7 +198,14 @@ img {
 
 .header-menu > li:hover {
   background-color: #FBDED7;
-  border-radius: 4px;
+}
+
+.header-menu > li:last-child {
+  border-radius: 0 0 4px 4px;
+}
+
+.header-menu > li:first-child {
+  border-radius: 4px 4px 0 0;
 }
 
 .header-menu::before {
@@ -216,8 +222,47 @@ img {
   display: block;
 }
 
-.header-search div {
+.header-search {
+  position: relative;
+}
+
+.form-search {
   display: none;
+  position: absolute;
+  z-index: 5;
+  top: 36px;
+  left: -309px;
+  background-color: var(--basic-white);
+  box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.4);
+  border-radius: 4px;
+  width: 341px;
+  height: 84px;
+}
+
+.form-search::before {
+  content: "";
+  background-color: transparent;
+  position: absolute;
+  top: -5px;
+  width: 341px;
+  height: 5px;
+}
+
+.form-search form {
+  padding: 20px 15px;
+}
+
+.form-search input {
+  width: 311px;
+  height: 44px;
+  background: #FFFFFF;
+  border: 1px solid #D3D3D2;
+  border-radius: 4px;
+  padding: 15px;
+}
+
+.header-search:hover .form-search {
+  display: block;
 }
 
 .header-login {
@@ -244,12 +289,12 @@ img {
   margin-bottom: 3px;
 }
 
-.search:hover path {
+.header-search:hover path {
   fill: var(--blog);
 }
 
-.search:hover,
-.exit:hover,
+.header-search:hover .search,
+.header-in-out:hover .exit,
 .box:hover {
   background-color: rgba(255, 255, 255, 1);
   color: var(--blog);
@@ -322,9 +367,7 @@ img {
   margin-left: 10px;
 }
 
-.header-in-out div {
-  display: none;
-}
+
 
 .header-pay {
   margin-left: 9px;
