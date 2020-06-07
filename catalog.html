@@ -59,20 +59,22 @@
                   </svg>
                   <span>Вход</span>
                 </a>
-                <div>
+                <div class="form-in-out">
                   <form action="https://echo.htmlacademy.ru" method="POST">
                     <label>
-                      <input type="email" name="header_email" aria-label="Введите электронную почту" placeholder="Электронная почта" required>
+                      <input type="email" name="header_email" aria-label="Введите электронную почту" placeholder="email@example.com" required>
                     </label>
                     <label>
-                      <input type="password" name="header_password" aria-label="Введите пароль" placeholder="Пароль" required>
+                      <input type="password" name="header_password" aria-label="Введите пароль" placeholder="......" required>
                     </label>
-                    <button type="submit" class="btn">Войти</button>
+                    <div class="btn-exit-form">
+                      <button type="submit" class="btn">Войти</button>
+                      <div>
+                        <a href="#">Забыли пароль?</a>
+                        <a href="#">Новая регистрация</a>
+                      </div>
+                    </div>
                   </form>
-                </div>
-                <div>
-                  <a href="#">Забыли пароль?</a>
-                  <a href="#">Новая регистрация</a>
                 </div>
               </li>
               <li class="header-pay">
@@ -85,27 +87,34 @@
                     </svg>
                   <span>2 товара</span>
                 </a>
-                <div>
+                <div class="box-table">
                   <table>
                     <tr>
-                      <td><button>X</button></td>
-                      <td><img src="img/cream1.jpg" alt="мороженое" width="33" height="33"></td>
-                      <td>Пломбир с апельсиновым джемом</td>
-                      <td>1,5 кг х <span>200 руб.</span></td>
+                      <td class="table-btn"></td>
+                      <td class="table-img">
+                        <img src="img/cream1.jpg" alt="мороженое" width="33" height="33">
+                      </td>
+                      <td class="table-name">Пломбир с апельсиновым джемом</td>
+                      <td class="table-price">1,5 кг х <span>200 руб.</span></td>
                       <td>300р.</td>
                     </tr>
                     <tr>
-                      <td><button>X</button></td>
-                      <td><img src="img/cream3.jpg" alt="мороженое" width="33" height="33"></td>
-                      <td>Клубничный пломбир с присыпкой из белого шоколада</td>
-                      <td>1,5 кг х <span>300 руб.</span></td>
+                      <td class="table-btn"></td>
+                      <td class="table-img">
+                        <img src="img/cream3.jpg" alt="мороженое" width="33" height="33">
+                      </td>
+                      <td class="table-name">Клубничный пломбир с присыпкой из белого шоколада</td>
+                      <td class="table-price">1,5 кг х <span>300 руб.</span></td>
                       <td>450р.</td>
                     </tr>
                     <tr>
-                      <td colspan="5">Итого: 750руб.</td>
+                      <td class="table-total-price" colspan="5">Итого: 750руб.</td>
+                      <td><a href="#" class="btn">Оформить заказ</a></td>
                     </tr>
                   </table>
-                  <a href="#">Оформить заказ</a>
+                  <div>
+                    
+                  </div>
                 </div>
               </li>
             </ul>

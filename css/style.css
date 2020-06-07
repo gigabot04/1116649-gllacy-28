@@ -11,6 +11,8 @@
   --nav-active: #EDEDED;
   --hover-modal: #E84D37;
   --hover-a: #FFBC9E;
+  --black: #000000;
+  --ABABAB: #ABABAB;
 }
 
 .visually-hidden {
@@ -295,7 +297,7 @@ img {
 
 .header-search:hover .search,
 .header-in-out:hover .exit,
-.box:hover {
+.header-pay:hover .box {
   background-color: rgba(255, 255, 255, 1);
   color: var(--blog);
 }
@@ -417,11 +419,9 @@ img {
   line-height: 15px;
   border-bottom: 1px solid rgba(50, 50, 50, 0.3);
   margin-bottom: 4px;
-}
-
-.form-in-out a {
   color: var(--blog);
 }
+
 
 .form-in-out::before {
   content: "";
@@ -438,11 +438,108 @@ img {
 }
 
 .header-pay {
+  position: relative;
   margin-left: 9px;
 }
 
-.header-pay div {
+.box-table {
   display: none;
+  position: absolute;
+  z-index: 5;
+  top: 35px;
+  left: -420px;
+  width: 539px;
+  min-height: 242px;
+  background: var(--basic-white);
+  box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.4);
+  border-radius: 4px;
+  color: var(--blog);
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 16px;
+  padding: 20px 14px 21px 15px;
+}
+
+.box-table::before {
+  content: "";
+  background-color: transparent;
+  position: absolute;
+  top: -5px;
+  left: 0;
+  width: 100%;
+  height: 5px;
+}
+
+.box-table tr:last-child {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  width: 510px;
+}
+
+.box-table tr:last-child::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: #CACAC7;
+  left: 0;
+}
+
+.box-table div {
+  width: 100%;
+}
+
+.box-table .btn {
+  padding: 13px 15px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 16px;
+}
+
+.box-table tr:not(:last-child) {
+  display: flex;
+  justify-content: space-between;
+  width: 464px;
+  margin-bottom: 20px;
+}
+
+.table-btn {
+  margin: auto 0;
+}
+
+.table-btn::before {
+  content: url(../img/X.svg);
+  cursor: pointer;
+}
+
+.table-img img {
+  border-radius: 50%;
+}
+
+.table-name {
+  margin-left: 13px;
+  padding-top: 10px;
+  width: 220px;
+  vertical-align: top;
+}
+
+.table-price {
+  color: var(--black);
+}
+
+.table-price span {
+  color: var(--ABABAB);
+}
+
+.table-total-price {
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 16px;
+  margin-left: 400px;
+  margin-top: 16px;
+  margin-bottom: 15px;
 }
 
 .time {
@@ -453,6 +550,10 @@ img {
   justify-content: flex-end;
   margin-right: -2px;
   margin-top: -2px;
+}
+
+.header-pay:hover .box-table {
+  display: block;
 }
 
 .time p {
