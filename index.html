@@ -212,7 +212,7 @@
               <p>Для заказов по телефону:</p> 
               <p><b>8 812 450-25-25</b></p>
               <p>(с 10 до 20 ежедневно)</p>
-              <a href="#" class="btn btn-large">Форма обратной связи</a>
+              <a class="btn btn-large block-btn">Форма обратной связи</a>
             </div>
           </div>
         </section>
@@ -243,20 +243,26 @@
           </div>
         </div>
       </footer>
-      <form action="https://echo.htmlacademy.ru" method="GET">
-        <fieldset>
-          <legend>Мы обязательно вам ответим!</legend>
-          <label>
-            <input type="text" name="popap_full-name" aria-label="Введите свое Имя Фамилию" placeholder="Имя Фамилия">
-          </label>
-          <label>
-            <input type="email" name="popap_email" aria-label="Введите свой электронную почту" placeholder="email@example.com">
-          </label>
-          <textarea name="popap_textarea" placeholder="В свободной форме"></textarea>
-          <button type="submit">Отправить</button>
-        </fieldset>
-      </form>
+    </div>
+    <div class="bg-color-popap block">
+      <div class="popap block">
+        <form action="https://echo.htmlacademy.ru" class="popap-form" method="GET">
+          <fieldset>
+            <button class="close" type="button"><span class="visually-hidden">Закрыть</span></button>
+            <legend>Мы обязательно вам ответим!</legend>
+            <label>
+              <input type="text" name="popap_full-name" aria-label="Введите свое Имя Фамилию" placeholder="Имя Фамилия">
+            </label>
+            <label>
+              <input type="email" name="popap_email" aria-label="Введите свой электронную почту" placeholder="email@example.com">
+            </label>
+            <textarea name="popap_textarea" placeholder="В свободной форме"></textarea>
+            <button type="submit" class="btn">Отправить</button>
+          </fieldset>
+        </form>
+      </div>
     </div>
     <script src="js/slider.js"></script>
+    <script src="js/popap.js"></script>
   </body>
 </html>

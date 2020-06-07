@@ -1269,6 +1269,94 @@ img {
   color: var(--hover-a);
   border-bottom: 1px solid rgba(255, 188, 158, 0.3);
 }
+
+/* POPAP */
+
+.block {
+  display: none;
+}
+
+.bg-color-popap {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 7;
+}
+
+.popap {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  width: 476px;
+  min-height: 442px;
+  background-color: var(--basic-white);
+  border-radius: 6px;
+  color: var(--blog);
+  padding: 15px 25px 24px 23px;
+}
+
+.popap-form fieldset {
+  position: relative;
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+
+.popap-form .close {
+  position: absolute;
+  right: -9px;
+  top: 0;
+  width: 18px;
+  height: 18px;
+  background-image: url(../img/X-popap.svg);
+  border: 0;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.popap-form legend {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  margin-bottom: 20px;
+}
+
+.popap-form input {
+  width: 267px;
+  height: 44px;
+  background: var(--normal-white);
+  border: 1px solid rgba(178, 178, 178, 0.52);
+  border-radius: 4px;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+
+.popap-form textarea {
+  width: 428px;
+  height: 154px;
+  background: var(--normal-white);
+  border: 1px solid rgba(178, 178, 178, 0.52);
+  border-radius: 4px;
+  resize: none;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+
+.popap-form .btn {
+  border: 0;
+  padding: 12px 24px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
+  margin-left: 290px;
+}
+
 /* ------------ */
 /* CATALOG.HTML */
 /* ------------ */
