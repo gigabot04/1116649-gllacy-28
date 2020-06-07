@@ -742,6 +742,7 @@ img {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 26px;
+  align-items: start;
 }
 
 .slider .btn-large {
@@ -752,7 +753,7 @@ img {
   font-size: 35px;
   line-height: 41px;
   margin: 0;
-  margin-bottom: 16px;
+  margin-bottom: -5px;
 }
 
 .stocks p {
@@ -768,27 +769,33 @@ img {
 }
 
 .stock1 {
-  background-color: var(--stub);
+  background-color: #410112;
   background-image: url(../img/raspberry.jpg);
+  background-size: cover;
   background-repeat: no-repeat;
   border-radius: 16px;
   width: 560px;
   min-height: 229px;
 }
 
+.stock {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .stocks a {
+  align-self: flex-end;
+  margin-left: auto;
   padding: 12px 22px;
-  position: absolute;
-  bottom: 22px;
-  right: 22px;
   font-weight: bold;
   font-size: 18px;
   line-height: 24px;
 }
 
 .stock2 {
-  background-color: var(--stub);
+  background-color: #43220D;
   background-image: url(../img/chocolate.jpg);
+  background-size: cover;
   background-repeat: no-repeat;
   border-radius: 16px;
   width: 560px;
@@ -884,7 +891,7 @@ img {
   position: absolute;
   z-index: -1;
   width: 293px;
-  min-height: 402px;
+  min-height: calc(100% + 65px);
   background-color: rgba(255, 255, 255, 0.3);
   border-radius: 5px;
   display: none;
@@ -915,7 +922,6 @@ img {
   position: relative;
   background-image: url(../img/pattern.jpg);
   background-color: var(--stub);
-  background-repeat: repeat no-repeat;
   min-height: 306px;
   border-radius: 16px;
   color: var(--pattern);
@@ -983,6 +989,7 @@ img {
 .news {
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
   margin-top: 40px;
 }
 
@@ -990,7 +997,9 @@ img {
 
 .blog {
   background-image: url(../img/strawberry.jpg);
+  background-color: #ffffff;
   background-repeat: no-repeat;
+  background-size: cover;
   border-radius: 16px;
   width: 560px;
   min-height: 220px;
@@ -1023,17 +1032,26 @@ img {
 
 /*mailing*/
 
+.mailing-bg {
+  background-image: url(../img/bg-mail.jpg);
+  background-repeat: repeat;
+  border-radius: 16px;
+  width: 560px;
+  min-height: 220px;
+}
+
 .mailing {
-  background-image: url(../img/mail-background.png);
+  background-color: var(--basic-white);
+  margin: 5px;
   border-radius: 16px;
   background-repeat: no-repeat;
   color: var(--mailling);
-  padding: 30px 21px 41px 27px;
+  padding: 25px 16px 35px 20px;
   font-weight: normal;
   font-size: 16px;
   line-height: 22px;
-  width: 560px;
-  min-height: 220px;
+  width: 550px;
+  min-height: 210px;
 }
 
 .mailing p {
@@ -1722,7 +1740,7 @@ input[type="checkbox"]:checked:disabled + .filter-checkbox::before {
   margin-top: 31px;
   margin-bottom: 30px;
   margin-left: auto;
-  width: 192px;
+  width: min-content;
 }
 
 .pages-swich a:not(:first-child):not(:last-child) {
@@ -1757,25 +1775,25 @@ input[type="checkbox"]:checked:disabled + .filter-checkbox::before {
 /* pages-swich */
 
 .arrow-left {
-  content: "";
   display: inline-block;
   border-top: 1px solid rgba(255, 255, 255, 0.2);
   border-left: 1px solid rgba(255, 255, 255, 0.2);
   transform: rotate(-45deg);
   width: 9px;
   height: 9px;
+  padding: 3px 4px;
   margin-top: 7px;
   margin-right: 11px;
 }
 
 .arrow-right {
-  content: "";
   display: inline-block;
   border-top: 1px solid rgba(255, 255, 255, 1);
   border-right: 1px solid rgba(255, 255, 255, 1);
   transform: rotate(45deg);
   width: 9px;
   height: 9px;
+  padding: 3px 4px;
   margin-top: 7px;
   margin-left: 9px;
 }
