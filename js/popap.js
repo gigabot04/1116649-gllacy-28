@@ -6,6 +6,7 @@ btn.onclick = function () {
   for (let i = 0; i < fiew.length; i++) {
     fiew[i].style.display = "block";
   }
+  event.preventDefault();
 }
 
 btnClose.onclick = function () {
