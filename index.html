@@ -6,8 +6,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/min-normalize.css">
     <link rel="stylesheet" href="css/min-style.css">
-    <link rel="preload" href="img/ice-cream1.png">
-    <link rel="preload" href="img/ice-cream2.png">
+    <link rel="preload" href="img/ice-cream1.png" as="image">
+    <link rel="preload" href="img/ice-cream2.png" as="image">
   </head>
   <body>
     <div id="text" class="bg-image image3">
@@ -190,6 +190,7 @@
               <a href="#">10 способов сервировки фруктовых щербетов к&nbsp;столу</a>
             </article>
             <article class="mailing-bg">
+              <h2 class="visually-hidden">Рассылка</h2>
               <div class="mailing">
                 <form action="https://echo.htmlacademy.ru" method="GET">
                   <p>Подпишитесь на нашу сладкую рассылку и будьте всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
@@ -250,8 +251,8 @@
       <div class="popap block">
         <form action="https://echo.htmlacademy.ru" class="popap-form" method="GET">
           <fieldset>
-            <button class="close" type="button"><span class="visually-hidden">Закрыть</span></button>
             <legend>Мы обязательно вам ответим!</legend>
+            <button class="close" type="button"><span class="visually-hidden">Закрыть</span></button>
             <label>
               <input type="text" name="popap_full-name" aria-label="Введите свое Имя Фамилию" placeholder="Имя Фамилия">
             </label>

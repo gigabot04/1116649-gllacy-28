@@ -621,7 +621,7 @@ img {
 }
 
 .table-btn::before {
-  content: url(../img/X.svg);
+  content: url(../img/x.svg);
   cursor: pointer;
 }
 
@@ -1500,7 +1500,7 @@ img {
   top: 0;
   width: 18px;
   height: 18px;
-  background-image: url(../img/X-popap.svg);
+  background-image: url(../img/x-popap.svg);
   border: 0;
   background-color: transparent;
   background-repeat: no-repeat;
