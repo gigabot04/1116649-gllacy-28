@@ -1,1 +1,0 @@
-let fiew=document.querySelectorAll(".block"),btnClose=document.querySelector(".close"),btn=document.querySelector(".block-btn");btn.onclick=function(){for(let a=0;a<fiew.length;a++)fiew[a].style.display="block";event.preventDefault()},btnClose.onclick=function(){for(let a=0;a<fiew.length;a++)fiew[a].style.display="none"};

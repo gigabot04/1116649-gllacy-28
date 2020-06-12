@@ -1504,13 +1504,13 @@ img {
   border-bottom: 1px solid var(--border-orange);
 }
 
-/* POPAP */
+/* POPUP */
 
 .block {
   display: none;
 }
 
-.bg-color-popap {
+.bg-color-popup {
   position: fixed;
   top: 0;
   left: 0;
@@ -1520,29 +1520,35 @@ img {
   z-index: 7;
 }
 
-.popap {
+.popup {
   position: fixed;
-  top: 50%;
-  left: 50%;
-  -ms-transform: translate(-50%, -50%);
-      transform: translate(-50%, -50%);
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
   z-index: 10;
   width: 476px;
-  min-height: 442px;
+  height: max-content;
   background-color: var(--basic-white);
   border-radius: 6px;
   color: var(--text);
   padding: 15px 25px 24px 23px;
+  animation: bounce 0.6s;
 }
 
-.popap-form fieldset {
+.popupError {
+  animation: shake 0.6s;
+}
+
+.popup-form fieldset {
   position: relative;
   border: 0;
   padding: 0;
   margin: 0;
 }
 
-.popap-form .close {
+.popup-form .close {
   position: absolute;
   right: -9px;
   top: 0;
@@ -1556,19 +1562,19 @@ img {
 }
 
 @-moz-document url-prefix() {
-  .popap-form .close {
+  .popup-form .close {
     top: -49px;
   }
 } 
 
-.popap-form legend {
+.popup-form legend {
   font-weight: 500;
   font-size: 24px;
   line-height: 28px;
   margin-bottom: 20px;
 }
 
-.popap-form input {
+.popup-form input {
   width: 267px;
   height: 44px;
   background: var(--normal-white);
@@ -1579,18 +1585,18 @@ img {
   font-weight: bold;
 }
 
-.popap-form input:hover {
+.popup-form input:hover {
   border: 2px solid var(--border-b2b2b2);
   padding-left: 14px;
 }
 
-.popap-form  input:focus {
+.popup-form  input:focus {
   outline: none;
   border: 2px solid var(--border-blue);
   padding-left: 14px;
 }
 
-.popap-form textarea {
+.popup-form textarea {
   width: 428px;
   height: 154px;
   background-color: var(--normal-white);
@@ -1602,31 +1608,71 @@ img {
   font-weight: bold;
 }
 
-.popap-form input:placeholder-shown,
-.popap-form textarea:placeholder-shown {
+.popup-form input:placeholder-shown,
+.popup-form textarea:placeholder-shown {
   font-weight: normal;
 }
 
-.popap-form textarea:hover {
+.popup-form textarea:hover {
   border: 2px solid var(--border-b2b2b2);
   padding-top: 14px;
   padding-left: 14px;
 }
 
-.popap-form  textarea:focus {
+.popup-form  textarea:focus {
   outline: none;
   border: 2px solid var(--border-blue);
   padding-top: 14px;
   padding-left: 14px;
 }
 
-.popap-form .btn {
+.popup-form .btn {
   border: 0;
   padding: 12px 24px;
   font-weight: bold;
   font-size: 18px;
   line-height: 24px;
   margin-left: 290px;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateX(-2000px);
+  }
+
+  70% {
+    transform: translateX(30px);
+  }
+
+  90% {
+    transform: translateX(-10px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
 }
 
 /* ------------ */
