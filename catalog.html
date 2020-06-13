@@ -4,11 +4,10 @@
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/min-normalize.css">
+    <link rel="stylesheet" href="css/min-style.css">
   </head>
   <body class="bg-color">
-  <div class="liner"></div>
     <header>
       <div class="wrapper">
         <div class="container">
@@ -21,7 +20,7 @@
                 <a href="#" class="nav-item active">Каталог</a>
                 <ul class="header-menu">
                   <li><a href="#">Новинки</a></li>
-                  <li class="active"><a href="catalog.html">Сливочное</a></li>
+                  <li class="active"><a>Сливочное</a></li>
                   <li><a href="#">Щербеты</a></li>
                   <li><a href="#">Фруктовый лед</a></li>
                   <li><a href="#">Мелорин</a></li>
@@ -87,10 +86,10 @@
                     </svg>
                   <span>2 товара</span>
                 </a>
-                <div class="box-table">
+                <div class="box-table" >
                   <table>
                     <tr>
-                      <td><button class="table-btn"></button></td>
+                      <td><button class="table-btn" aria-label="Удалить продукт из корзины"></button></td>
                       <td class="table-img">
                         <img src="img/cream1.jpg" alt="мороженое" width="33" height="33">
                       </td>
@@ -99,7 +98,7 @@
                       <td class="table-finish-price">300 руб.</td>
                     </tr>
                     <tr>
-                      <td><button class="table-btn"></button></td>
+                      <td><button class="table-btn" aria-label="Удалить продукт из корзины"></button></td>
                       <td class="table-img">
                         <img src="img/cream3.jpg" alt="мороженое" width="33" height="33">
                       </td>
@@ -167,27 +166,25 @@
                   <button class="circle1" type="button" style="left: 13%;"></button>
                   <button class="circle2" type="button" style="left: 68%;"></button>
                 </div>
-                </div>
-                
             </fieldset>
             <fieldset class="filter filter-fat">
               <legend>Жирность:</legend>
               <ul class="richness">
                 <li>
                   <input type="radio" name="fat" value="0" id="0" class="visually-hidden">
-                  <label for="0" class="fat-checkbox"><span>0%</span></label>
+                  <label for="0" class="fat-checkbox" >0%</label>
                 </li>
                 <li>
                   <input type="radio" name="fat" value="10" id="10" class="visually-hidden" checked>
-                  <label for="10" class="fat-checkbox"><span>до 10%</span></label>
+                  <label for="10" class="fat-checkbox" >до 10%</label>
                 </li>
                 <li>
                   <input type="radio" name="fat" value="min30" id="min30" class="visually-hidden">
-                  <label for="min30" class="fat-checkbox"><span>до 30%</span></label>
+                  <label for="min30" class="fat-checkbox" >до 30%</label>
                 </li>
                 <li>
                   <input type="radio" name="fat" value="max30" id="max30" class="visually-hidden">
-                  <label for="max30" class="fat-checkbox"><span>выше 30%</span></label>
+                  <label for="max30" class="fat-checkbox" >выше 30%</label>
                 </li>
               </ul>
             </fieldset>
@@ -324,27 +321,27 @@
         </section>
       </div>
       <div class="wrapper">
-        <div class="pages-swich">
-          <a class="arrow-left"></a>
+        <div class="pages-swich" aria-label="Переход между страницами">
+          <a class="arrow-left" aria-label="Переход на страницу назад"></a>
           <a>1</a>
           <a href="#">2</a>
           <a href="#">3</a>
           <a href="#">4</a>
           <a href="#">5</a>
-          <a href="#" class="arrow-right"></a>
+          <a href="#" class="arrow-right" aria-label="Переход на страницу вперед"></a>
         </div>
       </div>
     </main>
     <footer class="footer">
       <div class="wrapper">
         <section>
-          <h4 class="visually-hidden">Соц. сети</h4>
-          <div class="social">
-              <a href="#" class="social-fb social-hover"></a>
-              <a href="#" class="social-vk social-hover"></a>
-              <a href="#" class="social-inst social-hover"></a>
-              <a href="#" class="social-twit social-hover"></a>
-          </div>
+          <h4 class="visually-hidden">Социальные сети</h4>
+            <div class="social">
+              <a href="#" class="social-fb social-hover" aria-label="Фейсбук"></a>
+              <a href="#" class="social-vk social-hover" aria-label="Вконтакте"></a>
+              <a href="#" class="social-inst social-hover" aria-label="Инстаграм"></a>
+              <a href="#" class="social-twit social-hover" aria-label="Твиттер"></a>
+            </div>
         </section>
         <section class="footer-navigation">
           <h4 class="visually-hidden">Важно знать</h4>
@@ -356,7 +353,7 @@
           </ul>
         </section>
         <div class="html-academy">
-          <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-foot.svg" alt="logo" width="108" height="39"></a>
+          <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-foot.svg" alt="logo-html-academy" width="108" height="39"></a>
           <p>Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2019</p>
         </div>
       </div>

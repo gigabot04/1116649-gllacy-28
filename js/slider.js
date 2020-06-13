@@ -3,7 +3,7 @@ let btns = document.querySelectorAll(".btn-slider");
 let slite = document.querySelectorAll(".slide");
 
 for (let i = 0; i < btns.length; i++) {
-  btns[i].onclick = function () {
+  btns[i].addEventListener("click", function () {
     // меняю кнопку
     let currentBtn = document.querySelector(".current-btn");
     currentBtn.classList.remove("current-btn");
@@ -22,5 +22,5 @@ for (let i = 0; i < btns.length; i++) {
     }
     
     bgColor.classList.add("image" + (i + 1));
-  }
-}
+  })
+};

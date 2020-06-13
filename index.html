@@ -111,10 +111,10 @@
               <h2>Пломбир с помадкой и&nbsp;клубничный щербет</h2>
               <a href="#" class="btn  btn-large">Давайте оба!</a>
             </div>
-            <div class="slider-btn">
-              <button class="btn-slider"></button>
-              <button class="btn-slider"></button>
-              <button class="btn-slider current-btn"></button>
+            <div class="slider-btn" aria-label="Кнопки для переключения слайдов">
+              <button class="btn-slider" aria-label="Слайд первый"></button>
+              <button class="btn-slider" aria-label="Слайд второй"></button>
+              <button class="btn-slider current-btn" aria-label="Слайд третий"></button>
             </div>
           </section>
           <section class="sentences">
@@ -213,7 +213,7 @@
               <p>Адрес главного офиса и офлайн-магазина:</p>
               <p><strong>ул. Большая Конюшенная, 19/8, Санкт-Петербург</strong></p>
               <p>Для заказов по телефону:</p> 
-              <p><b>8 812 450-25-25</b></p>
+              <p><a href="tel:88124502525"><b>8 812 450-25-25</b></a></p>
               <p>(с 10 до 20 ежедневно)</p>
               <a href="popup.html" class="btn btn-large block-btn">Форма обратной связи</a>
             </div>
@@ -223,12 +223,12 @@
       <footer class="footer">
         <div class="wrapper">
           <section>
-            <h4 class="visually-hidden">Соц. сети</h4>
+            <h4 class="visually-hidden">Социальные сети</h4>
             <div class="social">
-                <a href="#" class="social-fb social-hover"></a>
-                <a href="#" class="social-vk social-hover"></a>
-                <a href="#" class="social-inst social-hover"></a>
-                <a href="#" class="social-twit social-hover"></a>
+              <a href="#" class="social-fb social-hover" aria-label="Фейсбук"></a>
+              <a href="#" class="social-vk social-hover" aria-label="Вконтакте"></a>
+              <a href="#" class="social-inst social-hover" aria-label="Инстаграм"></a>
+              <a href="#" class="social-twit social-hover" aria-label="Твиттер"></a>
             </div>
           </section>
           <section class="footer-navigation">
@@ -265,7 +265,6 @@
         </form>
       </div>
     </div>
-    <script src="js/min-slider.js"></script>
-    <script src="js/min-popup.js"></script>
+    <script src="js/min-script.js"></script>
   </body>
 </html>
