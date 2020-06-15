@@ -127,12 +127,6 @@ img {
   margin: 0 auto;
 }
 
-.wrapper2 {
-  padding-top: 9px;
-  width: 1146px;
-  margin: 0 auto;
-}
-
 /*Navigation*/
 
 .container {
@@ -924,8 +918,6 @@ img {
   -ms-grid-columns: 1fr 26px 1fr;
   grid-template-columns: 1fr 1fr;
   grid-gap: 26px;
-  -ms-flex-align: start;
-      align-items: start;
 }
 
 .slider .btn-large {
