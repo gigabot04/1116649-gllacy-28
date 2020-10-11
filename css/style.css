@@ -16,7 +16,7 @@
   --mailling: #5A5A5A;
   --nav-active: #EDEDED;
   --ababab: #ABABAB;
-  
+
   --hover-modal: #E84D37;
   --hover-a: #FFBC9E;
 
@@ -267,7 +267,7 @@ img {
   padding-top: 11px;
   padding-bottom: 5px;
   padding-left: 21px;
-  
+
 }
 
 .header-menu > li:last-child > a {
@@ -1555,7 +1555,7 @@ img {
   .popup-form .close {
     top: -49px;
   }
-} 
+}
 
 .popup-form legend {
   font-weight: 500;
@@ -1781,7 +1781,7 @@ img {
   .sort-svg {
     top: 14px;
   }
-} 
+}
 
 .sorts:hover .sort-svg-path {
   fill: var(--text);
@@ -1856,7 +1856,7 @@ img {
   left: 50%;
   -ms-transform: translate(-50%, -50%);
       transform: translate(-50%, -50%);
-} 
+}
 
 input[type="number"] {
   -moz-appearance:textfield;
@@ -1880,7 +1880,7 @@ input::-webkit-inner-spin-button {
   .price-controls {
     top: -23px;
   }
-} 
+}
 
 .price-controls input {
   color: var(--normal-white);
@@ -2056,7 +2056,7 @@ input[type="checkbox"]:checked + .filter-checkbox::before  {
   width: 24px;
 
   opacity: 0.8;
-} 
+}
 
 input[type="checkbox"]:not(:checked) + .filter-checkbox:hover::before,
 input[type="checkbox"]:checked + .filter-checkbox:hover::before {
@@ -2070,7 +2070,7 @@ input[type="checkbox"]:checked:disabled + .filter-checkbox::before {
   opacity: 0.4;
 }
 
-input[type="checkbox"]:focus  + .filter-checkbox::before{
+input[type="checkbox"]:focus + .filter-checkbox::before{
   content: "";
   opacity: 1;
 }
